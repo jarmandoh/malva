@@ -1,0 +1,14 @@
+.topBanner {
+  background-color: #f0f0f0; /* Un color suave para el banner */
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--text-color);
+  height: var(--banner-cinta-height); /* Usar la variable de altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}

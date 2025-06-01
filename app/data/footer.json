@@ -1,0 +1,29 @@
+[
+  {
+    "id": "siguenos",
+    "title": "Síguenos",
+    "items": [
+      { "id": "facebook", "label": "Facebook", "path": "https://facebook.com/malva" },
+      { "id": "instagram", "label": "Instagram", "path": "https://instagram.com/malva" },
+      { "id": "youtube", "label": "YouTube", "path": "https://youtube.com/malva" },
+      { "id": "pinterest", "label": "Pinterest", "path": "https://pinterest.com/malva" }
+    ]
+  },
+  {
+    "id": "servicio-cliente",
+    "title": "Servicio al cliente",
+    "items": [
+      { "id": "contacto", "label": "Contáctanos/PQRS", "path": "/contacto" },
+      { "id": "recoge-tienda", "label": "Recoge en tienda", "path": "/recoge-tienda" },
+      { "id": "localizador-tiendas", "label": "Localizador de tiendas", "path": "/tiendas" }
+    ]
+  },
+  {
+    "id": "quienes-somos",
+    "title": "Quiénes Somos",
+    "items": [
+      { "id": "nuestro-equipo", "label": "Nuestro equipo", "path": "/quienes-somos/equipo" },
+      { "id": "historia", "label": "Nuestra historia", "path": "/quienes-somos/historia" }
+    ]
+  }
+]

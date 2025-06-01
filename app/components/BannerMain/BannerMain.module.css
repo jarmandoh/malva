@@ -1,0 +1,69 @@
+.bannerMain {
+  width: 100%;
+  height: 80dvh; /* Altura base del banner */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el contenido a la izquierda */
+  color: white; /* Color del texto sobre la imagen */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para mejor legibilidad */
+  
+  /* Imagen para desktop */
+  background-image: url('../../assets/banner-main.webp');
+}
+
+.content {
+  text-align: right; /* Alinea el texto a la izquierda dentro del content */
+  max-width: 400px; /* Ancho máximo para el bloque de texto */
+  padding: 20px; /* Espacio alrededor del texto */
+}
+
+.content h1 {
+  font-size: 3em;
+}
+
+.content p {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.shopNowButton {
+  text-decoration: underline;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopNowButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive para mobile */
+@media (max-width: 767px) {
+  .bannerMain {
+    height: 80dvh; /* Menor altura en mobile */
+    justify-content: end; /* Centra el contenido en mobile */
+    align-items: end;
+    padding-left: 0; /* Quita el padding izquierdo en mobile */
+    text-align: center; /* Centra el texto en mobile */
+    /* Imagen para mobile */
+    background-image: url('../../assets/banner-main-mobile.webp'); /* Usa la imagen con texto si es la de mobile */
+  }
+
+  .content {
+      max-width: 90%; /* Ajusta el ancho para mobile */
+      text-align: right;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 0.8em;
+  }
+}

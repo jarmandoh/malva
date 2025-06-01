@@ -1,0 +1,93 @@
+[
+  {
+    "id": "mujer",
+    "label": "Mujer",
+    "subItems": [
+      {
+        "id": "new-in-mujer",
+        "label": "New In",
+        "path": "/mujer/new-in"
+      },
+      {
+        "id": "malva-edition-mujer",
+        "label": "Malva Edition",
+        "path": "/mujer/malva-edition"
+      },
+      {
+        "id": "ropa-mujer",
+        "label": "Ropa",
+        "items": [
+          { "id": "vestidos", "label": "Vestidos", "path": "/mujer/ropa/vestidos" },
+          { "id": "camisas", "label": "Camisas", "path": "/mujer/ropa/camisas" },
+          { "id": "pantalones", "label": "Pantalones", "path": "/mujer/ropa/pantalones" },
+          { "id": "faldas", "label": "Faldas", "path": "/mujer/ropa/faldas" }
+        ]
+      },
+      {
+        "id": "calzado-mujer",
+        "label": "Calzado",
+        "items": [
+          { "id": "tacones", "label": "Tacones", "path": "/mujer/calzado/tacones" },
+          { "id": "sandalias", "label": "Sandalias", "path": "/mujer/calzado/sandalias" },
+          { "id": "botas", "label": "Botas", "path": "/mujer/calzado/botas" }
+        ]
+      },
+      {
+        "id": "disenadores-mujer",
+        "label": "Diseñadores",
+        "path": "/mujer/disenadores"
+      },
+      {
+        "id": "accesorios-mujer",
+        "label": "Accesorios",
+        "items": [
+            { "id": "bolsos", "label": "Bolsos", "path": "/mujer/accesorios/bolsos" },
+            { "id": "cinturones", "label": "Cinturones", "path": "/mujer/accesorios/cinturones" }
+        ]
+      },
+      {
+        "id": "joyeria-mujer",
+        "label": "Joyería",
+        "path": "/mujer/joyeria"
+      },
+      {
+        "id": "black-days-mujer",
+        "label": "Black Days",
+        "path": "/mujer/black-days"
+      }
+    ]
+  },
+  {
+    "id": "hombre",
+    "label": "Hombre",
+    "subItems": [
+      {
+        "id": "new-in-hombre",
+        "label": "New In",
+        "path": "/hombre/new-in"
+      },
+      {
+        "id": "ropa-hombre",
+        "label": "Ropa",
+        "items": [
+          { "id": "camisas-hombre", "label": "Camisas", "path": "/hombre/ropa/camisas" },
+          { "id": "pantalones-hombre", "label": "Pantalones", "path": "/hombre/ropa/pantalones" },
+          { "id": "chaquetas-hombre", "label": "Chaquetas", "path": "/hombre/ropa/chaquetas" }
+        ]
+      },
+      {
+        "id": "calzado-hombre",
+        "label": "Calzado",
+        "items": [
+          { "id": "zapatos-hombre", "label": "Zapatos", "path": "/hombre/calzado/zapatos" },
+          { "id": "tenis-hombre", "label": "Tenis", "path": "/hombre/calzado/tenis" }
+        ]
+      },
+      {
+        "id": "accesorios-hombre",
+        "label": "Accesorios",
+        "path": "/hombre/accesorios"
+      }
+    ]
+  }
+]

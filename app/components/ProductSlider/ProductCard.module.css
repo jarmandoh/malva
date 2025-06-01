@@ -1,0 +1,80 @@
+.productCard {
+  display: flex;
+  flex-direction: column;;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+  height: 100%;
+  
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  display: block;
+}
+
+.productInfo {
+  padding: 15px;
+}
+
+.productBrand {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.productTitle {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  min-height: 40px; /* Asegura un espacio mínimo para el título */
+}
+
+.productPrice {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.productTags {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #e9e9e9;
+  color: #666;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.addToCartButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Color azul, puedes cambiarlo por el de Malva */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #0056b3;
+}

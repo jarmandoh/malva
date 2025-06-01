@@ -1,0 +1,66 @@
+[
+  {
+    "id": "prod1",
+    "image": "./sliders/slider-01.webp",
+    "brand": "GLEE WEAR",
+    "title": "Top Mia",
+    "price": 99.990,
+    "tags": ["Nuevo", "Popular"]
+  },
+  {
+    "id": "prod2",
+    "image": "./sliders/slider-02.webp",
+    "brand": "GLEE WEAR",
+    "title": "Legging Natura",
+    "price": 249.990,
+    "tags": ["Exclusivo"]
+  },
+  {
+    "id": "prod3",
+    "image": "./sliders/slider-03.webp",
+    "brand": "GLEE WEAR",
+    "title": "Short Dream",
+    "price": 179.990,
+    "tags": ["Deportivo", "Oferta"]
+  },
+  {
+    "id": "prod4",
+    "image": "./sliders/slider-04.webp",
+    "brand": "GLEE WEAR",
+    "title": "Legging Doble Amor",
+    "price": 199.990,
+    "tags": ["Oferta"]
+  },
+  {
+    "id": "prod5",
+    "image": "./sliders/slider-05.webp",
+    "brand": "ATHLETE",
+    "title": "Camiseta Fit Pro",
+    "price": 85.000,
+    "tags": ["Deportivo"]
+  },
+  {
+    "id": "prod6",
+    "image": "./sliders/slider-06.webp",
+    "brand": "COZY CO",
+    "title": "Pantalón Jogger Relax",
+    "price": 150.000,
+    "tags": ["Casual", "Comodidad"]
+  },
+  {
+    "id": "prod7",
+    "image": "./sliders/slider-07.webp",
+    "brand": "URBAN CHIC",
+    "title": "Blusa Estilo Urbano",
+    "price": 120.000,
+    "tags": ["Casual"]
+  },
+  {
+    "id": "prod8",
+    "image": "./sliders/slider-08.webp",
+    "brand": "ELEGANCE",
+    "title": "Vestido Noche",
+    "price": 300.000,
+    "tags": ["Fiesta"]
+  }
+]

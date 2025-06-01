@@ -1,0 +1,64 @@
+.productSliderSection {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sliderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sliderHeader h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.navigationArrows {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.swiperButtonPrev:hover,
+.swiperButtonNext:hover {
+  background-color: #ddd;
+}
+
+/* Esconder los arrows por defecto en Swiper y dejar los nuestros */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+}
+
+.swiperContainer {
+  padding-bottom: 20px; /* Espacio para posibles sombras o controles */
+}
+
+/* Ajustes responsivos para Swiper */
+@media (max-width: 767px) {
+  .sliderHeader h2 {
+    font-size: 1.5em;
+  }
+  .navigationArrows {
+    display: none; /* Podrías ocultar los arrows en mobile y usar arrastrar */
+  }
+}

@@ -1,0 +1,178 @@
+.footer {
+  background-color: #222; /* Color de fondo oscuro */
+  color: #ccc;
+  padding: 40px 20px 20px;
+  font-size: 0.9em;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se envuelvan en mobile */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.footerColumn {
+  flex: 1; /* Ocupa el espacio disponible */
+  min-width: 200px; /* Ancho mínimo para cada columna */
+}
+
+.footerColumn h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.columnTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default; /* Por defecto no es clickeable */
+  border-bottom: 1px solid #333; /* Línea debajo del título */
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.accordionArrow {
+  display: none; /* Oculto por defecto en desktop */
+  font-size: 0.8em;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 8px;
+}
+
+.footerColumn ul li a {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.footerColumn ul li a:hover {
+  color: white;
+}
+
+.newsletterColumn {
+  flex: 2; /* El newsletter ocupa más espacio */
+  min-width: 300px; /* Ancho mínimo para el newsletter */
+}
+
+.newsletterColumn p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.genderOptions {
+  display: flex;
+  gap: 15px;
+}
+
+.termsCheckboxContainer {
+  margin-top: 10px;
+}
+
+.termsCheckboxContainer .link {
+  color: #007bff; /* Un color distintivo para el enlace */
+  text-decoration: underline;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+  display: block;
+}
+
+.footerBottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.legalLinks a {
+  color: #ccc;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+  border-left: 1px solid #b0b0b0; /* Línea a la izquierda del enlace */
+  padding-left: 10px;
+}
+
+.legalLinks a:hover {
+  color: white;
+}
+
+/* Responsive para mobile */
+@media (max-width: 767px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 0; /* Elimina el gap entre columnas en mobile */
+  }
+
+  .footerColumn {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333; /* Separador en mobile */
+    padding-bottom: 20px;
+  }
+
+  .footerColumn:last-child {
+      border-bottom: none; /* No hay borde en la última columna */
+  }
+
+  .columnTitle {
+    cursor: pointer; /* Hace que el título sea clickeable en mobile */
+    padding: 10px 0;
+  }
+
+  .accordionArrow {
+    display: block; /* Muestra el arrow en mobile */
+  }
+
+  /* Oculta las listas por defecto en mobile */
+  .columnList {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  /* Muestra la lista cuando el acordeón está abierto */
+  .columnList.open {
+    max-height: 500px; /* Un valor lo suficientemente grande para mostrar todo el contenido */
+  }
+
+  .footerBottom {
+    flex-direction: column;
+  }
+
+  .legalLinks {
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+    padding: 0;
+  }
+}

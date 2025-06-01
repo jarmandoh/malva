@@ -1,0 +1,41 @@
+@import './variables.css';
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  height: 100%;
+  font-family: var(--font-family-sans);
+  color: var(--text-color);
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fdfdfd; /* Un fondo claro */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Clases de utilidad generales */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos para el body cuando el header es fixed */
+body.header-fixed-padding {
+  background-color: red;
+    padding-top: calc(var(--header-height) + var(--banner-cinta-height)); /* Ajusta según la altura de tu header y banner */
+}
