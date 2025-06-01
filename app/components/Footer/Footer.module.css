@@ -14,7 +14,10 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #333;
 }
-
+.siguenosList{
+  display: flex;
+  
+}
 .footerColumn {
   flex: 1; /* Ocupa el espacio disponible */
   min-width: 200px; /* Ancho mínimo para cada columna */

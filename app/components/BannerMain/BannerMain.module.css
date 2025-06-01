@@ -1,6 +1,6 @@
 .bannerMain {
   width: 100%;
-  height: 80dvh; /* Altura base del banner */
+  height: 100dvh; /* Altura base del banner */
   background-size: cover;
   background-position: center;
   display: flex;

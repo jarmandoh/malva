@@ -4,9 +4,10 @@
     "title": "Síguenos",
     "items": [
       { "id": "facebook", "label": "Facebook", "path": "https://facebook.com/malva" },
+      { "id": "pinterest", "label": "Pinterest", "path": "https://pinterest.com/malva" },
       { "id": "instagram", "label": "Instagram", "path": "https://instagram.com/malva" },
       { "id": "youtube", "label": "YouTube", "path": "https://youtube.com/malva" },
-      { "id": "pinterest", "label": "Pinterest", "path": "https://pinterest.com/malva" }
+      { "id": "tiktok", "label": "TikTok", "path": "https://tiktok.com/@malva" }
     ]
   },
   {
