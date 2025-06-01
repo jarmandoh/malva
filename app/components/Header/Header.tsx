@@ -21,21 +21,21 @@ const Header: React.FC = () => {
     const headerElement = document.querySelector(`.${styles.header}`);
     if (headerElement) {
       const headerHeight = headerElement.scrollHeight; // Obtener altura real del header
-      document.documentElement.style.setProperty('--header-dynamic-height', `${headerHeight}px`);
+      //document.documentElement.style.setProperty('--header-dynamic-height', `${headerHeight}px`);
     }
 
     if (scrollDirection === 'up') {
-      document.body.classList.add('header-fixed-padding');
+      //document.body.classList.add('header-fixed-padding');
     } else {
-      document.body.classList.remove('header-fixed-padding');
+      //document.body.classList.remove('header-fixed-padding');
     }
   }, [scrollDirection]);
 
 
   return (
-    <header className={`${styles.header} ${scrollDirection === 'up' ? styles.fixed : ''}`}>
+    <header >
       <TopBanner />
-      <div className={styles.mainHeader}>
+      <div className={`${styles.header} ${scrollDirection === 'up' ? styles.fixed : ''}`}>
         <div className={styles.navegacion}>
           <div className={styles.hamburgerIcon} onClick={toggleMenu}>
             { 

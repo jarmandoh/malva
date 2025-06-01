@@ -1,9 +1,17 @@
+header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
 .header {
   width: 100%;
-  position: relative;
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
+  z-index: 10;
   color: #000;
+  background-color: transparent;
+  display: flex;
+  margin-top: 40px;
+  position: relative;
 }
 
 .navegacion{
@@ -25,14 +33,7 @@ svg, svg * {
   transition: all 0.3s ease-in-out;
 }
 
-.header.fixed {
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: slideDown 0.3s ease-out forwards;
-  background-color: var(--primary-color); /* Cambia el color de fondo al hacer scroll */
-}
+
 
 @keyframes slideDown {
   from {
@@ -81,6 +82,8 @@ svg, svg * {
   display: flex;
   gap: 20px;
   font-size: 20px;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .icons span {

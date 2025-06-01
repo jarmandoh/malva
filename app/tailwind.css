@@ -4,10 +4,26 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+
   /* @apply bg-white dark:bg-gray-950;
   
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   } */
+}
+
+.estilo-visible-menu{
+  background-color: #fff;
+  
+  svg {
+    fill: #000;
+  }
+  svg * {
+    stroke: #000;
+    fill: #000;
+    stroke-width: 0.05; 
+  }
+  *{
+    color: #000;
+  }
 }

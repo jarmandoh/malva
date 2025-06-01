@@ -10,11 +10,19 @@ const useScrollDirection = (): ScrollDirection => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
+      if( currentScrollY > 40 ) {
+        const headerElement = document.querySelector(`header`);
+        headerElement?.classList.add('estilo-visible-menu');
+      } else {
+        const headerElement = document.querySelector(`header`);
+        headerElement?.classList.remove('estilo-visible-menu');
+      }
+
       if( currentScrollY === lastScrollY) {
         return; // No change in scroll position  
       }
 
-      if (currentScrollY > lastScrollY && currentScrollY > 50) { // Scrolling down, past a threshold
+      if (currentScrollY > lastScrollY && currentScrollY > 40) { // Scrolling down, past a threshold
         setScrollDirection('down');
       } else if (currentScrollY < lastScrollY) { // Scrolling up
         setScrollDirection('up');
