@@ -29,7 +29,7 @@
   background-color: white;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease-in-out;
-  padding: 20px;
+  padding: 20px 0;
   overflow-y: auto; /* Para permitir scroll si el contenido es largo */
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './HamburgerMenu.module.css';
 import { getMenuItems } from '../../services/menuService';
 import { MenuItem } from '../../types';
+import Tabs from '../common/Tab';
 
 interface HamburgerMenuProps {
   isOpen: boolean;
@@ -55,77 +56,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, onClose }) => {
     <div className={`${styles.overlay} ${isOpen ? styles.open : ''}`} onClick={onClose}>
       <nav className={`${styles.hamburgerMenu} ${isOpen ? styles.open : ''}`} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeBtn} onClick={onClose}>&times;</button>
-        <ul>
-          <li className={styles.mainMenuItem}>
-            <span className={styles.categoryTitle}>Mujer</span>
-            <ul className={styles.subMenu}>
-              {menuItems.find(item => item.id === 'mujer')?.subItems?.map(subItem => (
-                <li key={subItem.id} className={styles.subMenuItem}>
-                  <div className={styles.subMenuHeader} onClick={() => handleSubMenuToggle(subItem.id)}>
-                    <span>{subItem.label}</span>
-                    {subItem.items && <span className={styles.arrow}>{activeSubMenu === subItem.id ? '▲' : '▼'}</span>}
-                  </div>
-                  {subItem.items && activeSubMenu === subItem.id && (
-                    <ul className={styles.subSubMenu}>
-                      {subItem.items.map(subSubItem => (
-                        <li key={subSubItem.id} className={styles.subSubMenuItem}>
-                          <div className={styles.subSubMenuHeader} onClick={() => handleSubSubMenuToggle(subSubItem.id)}>
-                             <span>{subSubItem.label}</span>
-                             {subSubItem.items && <span className={styles.arrow}>{activeSubSubMenu === subSubItem.id ? '▲' : '▼'}</span>}
-                          </div>
-                          {subSubItem.items && activeSubSubMenu === subSubItem.id && (
-                            <ul className={styles.finalLevelMenu}>
-                                {subSubItem.items.map(finalItem => (
-                                    <li key={finalItem.id}>
-                                        <a href={finalItem.path || '#'}>{finalItem.label}</a>
-                                    </li>
-                                ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </li>
-          <li className={styles.mainMenuItem}>
-            <span className={styles.categoryTitle}>Hombre</span>
-            <ul className={styles.subMenu}>
-              {menuItems.find(item => item.id === 'hombre')?.subItems?.map(subItem => (
-                <li key={subItem.id} className={styles.subMenuItem}>
-                  <div className={styles.subMenuHeader} onClick={() => handleSubMenuToggle(subItem.id)}>
-                    <span>{subItem.label}</span>
-                    {subItem.items && <span className={styles.arrow}>{activeSubMenu === subItem.id ? '▲' : '▼'}</span>}
-                  </div>
-                  {subItem.items && activeSubMenu === subItem.id && (
-                    <ul className={styles.subSubMenu}>
-                      {subItem.items.map(subSubItem => (
-                        <li key={subSubItem.id} className={styles.subSubMenuItem}>
-                          <div className={styles.subSubMenuHeader} onClick={() => handleSubSubMenuToggle(subSubItem.id)}>
-                             <span>{subSubItem.label}</span>
-                             {subSubItem.items && <span className={styles.arrow}>{activeSubSubMenu === subSubItem.id ? '▲' : '▼'}</span>}
-                          </div>
-                          {subSubItem.items && activeSubSubMenu === subSubItem.id && (
-                            <ul className={styles.finalLevelMenu}>
-                                {subSubItem.items.map(finalItem => (
-                                    <li key={finalItem.id}>
-                                        <a href={finalItem.path || '#'}>{finalItem.label}</a>
-                                    </li>
-                                ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </li>
-          {/* Otros ítems de menú si los hubiera */}
-        </ul>
+        <Tabs/>
       </nav>
     </div>
   );
